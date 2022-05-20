@@ -1,0 +1,21 @@
+// COLOR VARIABLES
+$primary-color: rgb(40, 141, 190);
+$secondary-color: rgb(190, 40, 141);
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+
+// WIDTH VARIABLES
+$website-width: 1280px;
+
+// IMAGE VARIABLES
+$bg-image: url("../img/showcase.jpg");
+
+// SET COLOR FUNCTION
+@function set-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

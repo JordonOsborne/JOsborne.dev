@@ -1,0 +1,302 @@
+// TABLEETS
+@media (max-width: 920px) {
+  // UTILITIES
+  .grid {
+    &-4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &-5 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .img {
+    &-large {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  // HOME PAGE
+  #header-home {
+    height: 45vh;
+    #logo {
+      display: none;
+      &-white {
+        display: block;
+      }
+    }
+    .header-content {
+      padding-top: 10%;
+
+      .lead {
+        line-height: 2rem;
+      }
+    }
+  }
+  #Stats {
+    .block {
+      &:nth-child(1) {
+        background-color: $medium-color;
+      }
+      &:nth-child(2) {
+        background-color: $light-color;
+      }
+      &:nth-child(4) {
+        background-color: $medium-color;
+      }
+    }
+  }
+  // ABOUT PAGE
+  #About {
+    #info {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+
+      div {
+        border-top: 10px solid $primary-color;
+        border-left: none;
+        padding: 1rem 3rem;
+      }
+    }
+  }
+  #Tools {
+    div:last-child {
+      grid-column-end: span 3;
+    }
+  }
+  // MY WORK PAGE
+  #myWork {
+    .filter {
+      flex-direction: column;
+      &-btns {
+        align-self: start;
+        margin-left: 0;
+      }
+    }
+    #Gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+  // CONTACT PAGE
+  #Contact {
+    height: calc(100vh - 5rem);
+    form {
+      div {
+        &:nth-child(1),
+        &:nth-child(2) {
+          margin-right: 2rem;
+        }
+        label {
+          margin: 0 1rem;
+          flex: 1;
+        }
+      }
+    }
+  }
+  #ContactInfo {
+    grid-template-columns: repeat(2, 1fr);
+    div:last-child {
+      display: none;
+    }
+  }
+}
+@media (max-width: 420px) {
+  // UTILITIES
+  .grid {
+    &-2,
+    &-3,
+    &-4,
+    &-5 {
+      grid-template-columns: 1fr;
+    }
+  }
+  .img {
+    &-large {
+      width: 75px;
+      height: 75px;
+    }
+  }
+  #header-inner {
+    .container {
+      padding: 0 0.5rem;
+    }
+  }
+
+  // HOME PAGE
+  #main-nav {
+    flex-direction: column;
+    padding-top: 0.5rem;
+    justify-content: flex-start;
+
+    a {
+      font-size: 1rem;
+    }
+  }
+  #header-home {
+    height: 30rem;
+    .container {
+      padding: 0 0.5rem;
+    }
+    .header-content {
+      h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+      .lead {
+        margin: 0;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  #Stats {
+    .block {
+      &:nth-child(odd) {
+        background-color: $medium-color;
+      }
+      &:nth-child(even) {
+        background-color: $light-color;
+      }
+    }
+  }
+
+  // ABOUT PAGE
+  #About {
+    .lead {
+      margin: 0 1rem;
+    }
+    #info {
+      margin: 2rem 0;
+      gap: 0;
+      div {
+        padding: 1rem;
+      }
+    }
+  }
+  #Technology {
+    #Tools {
+      grid-template-columns: repeat(2, 1fr);
+      div {
+        h3 {
+          font-size: 1rem;
+          padding: 1rem 0.5rem;
+        }
+        &:last-child {
+          grid-column-end: auto;
+        }
+      }
+    }
+  }
+
+  // MY WORK PAGE
+  #myWork {
+    .filter {
+      flex-direction: column;
+    }
+    .filter-btns {
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-self: center;
+
+      #Applications {
+        .filter-btn {
+          padding: 0.5rem 1.5rem;
+        }
+      }
+      .filter-btn {
+        flex-direction: column;
+        padding: 0.5rem 1.5rem;
+        flex: 1;
+        img {
+          height: 2rem;
+          width: 2rem;
+        }
+        span {
+          display: none;
+        }
+      }
+    }
+
+    #Gallery {
+      gap: 1.5rem;
+      .project {
+        grid-template-areas:
+          "PImage"
+          "Name"
+          "Technology"
+          "Description"
+          "Link";
+        &-img {
+          height: auto;
+          width: 100%;
+        }
+        h4 {
+          padding: 0.5rem 0;
+          text-align: center;
+          overflow: auto;
+          white-space: normal;
+          height: auto;
+        }
+        .technology {
+          justify-content: center;
+        }
+        p {
+          text-align: center;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  // CONTACT PAGE
+  #Contact {
+    height: auto;
+    .lead {
+      margin: 0 2rem;
+      margin-bottom: 2rem;
+    }
+    #ContactInfo {
+      grid-template-columns: 1fr;
+      gap: 0;
+      h3 {
+        font-size: 1rem;
+      }
+    }
+    form {
+      padding: 1rem;
+      div {
+        flex-direction: column;
+        margin: 0;
+        &:nth-child(1),
+        &:nth-child(2) {
+          margin-right: 0;
+        }
+        label,
+        label[for="Subject"],
+        input,
+        #Subject,
+        textarea {
+          margin-top: 0.5rem;
+          width: 90%;
+          text-align: left;
+        }
+        label[for="Subject"] {
+          font-size: 1rem;
+        }
+      }
+      button[type="Submit"] {
+        width: 90%;
+        margin: 2rem auto;
+      }
+    }
+  }
+
+  // FOOTER
+  #main-footer {
+    flex-direction: column-reverse;
+    a {
+      &[href^="tel:"] {
+        display: inline-block;
+      }
+    }
+  }
+}

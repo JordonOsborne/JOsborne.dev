@@ -1,0 +1,144 @@
+{
+  "Projects": [
+    {
+      "Project": "Church Hill First United Methodist",
+      "URL": "https://www.ChurchHillFUMC.com",
+      "Link": "ChurchHillFUMC.com",
+      "Image": "./img/projects/ChurchHillFUMC.com.png",
+      "Description": "Designed and built the website using the WIX editor. Website was built during the hieight of COVID and required a custom registration form for participants to fill out prior to visiting for sermons.",
+      "Date": "2019-06-01",
+      "Technology": [
+        {
+          "name": "WIX",
+          "Image": "./img/logos/WIX.svg"
+        },
+        {
+          "name": "JavaScript",
+          "Image": "./img/logos/JS.png"
+        }
+      ]
+    },
+    {
+      "Project": "Warehouse Inventory Webpage",
+      "URL": "https://github.com/JordonOsborne/Eastman/tree/main/Warehouse%20Inventory",
+      "Link": "Inventory Webpage",
+      "Image": "https://github.com/JordonOsborne/Eastman/blob/main/Warehouse%20Inventory/WarehouseInventory.png?raw=true",
+      "Description": "Used vanilla HTML, CSS, and JavaScript to create a custom SharePoint Online webpage. The JavaScript updates two backend databases, while preventing users from modifying read-only information on the front end.",
+      "Date": "2019-06-01",
+      "Technology": [
+        {
+          "name": "SharePoint",
+          "Image": "./img/logos/SharePoint.svg"
+        },
+        {
+          "name": "HTML",
+          "Image": "./img/logos/HTML.png"
+        },
+        {
+          "name": "CSS",
+          "Image": "./img/logos/CSS.png"
+        },
+        {
+          "name": "JavaScript",
+          "Image": "./img/logos/JS.png"
+        }
+      ]
+    },
+    {
+      "Project": "Supplier Risk Evaluation (SharePoint 2010)",
+      "URL": "https://github.com/JordonOsborne/Eastman/tree/main/Supplier%20Risk%20Evaluation/SharePoint%202010",
+      "Link": "Supplier Evaluation",
+      "Image": "https://github.com/JordonOsborne/Eastman/blob/main/Supplier%20Risk%20Evaluation/SharePoint%202010/SupplierRiskEvaluation_Risk.png?raw=true",
+      "Description": "Used CSS and JavaScript to customize default SharePoint form. JavaScript involved evaluating a score based on inputs selected and displaying the results and help screens.",
+      "Date": "2020-05-01",
+      "Technology": [
+        {
+          "name": "SharePoint",
+          "Image": "./img/logos/SharePoint.svg"
+        },
+        {
+          "name": "CSS",
+          "Image": "./img/logos/CSS.png"
+        },
+        {
+          "name": "JavaScript",
+          "Image": "./img/logos/JS.png"
+        }
+      ]
+    },
+    {
+      "Project": "Supplier Risk Evaluation (Power App)",
+      "URL": "https://github.com/JordonOsborne/Eastman/tree/main/Supplier%20Risk%20Evaluation/Power%20App",
+      "Link": "Supplier Evaluation",
+      "Image": "https://github.com/JordonOsborne/Eastman/blob/main/Supplier%20Risk%20Evaluation/Power%20App/SupplierRiskEvaluation_Risk.png?raw=true",
+      "Description": "Migrated list from SharePoint 2010 to SharePoint Online and utilized all Office 365 applications to extend the benefits further than the JavaScript solution could.",
+      "Date": "2022-04-01",
+      "Technology": [
+        {
+          "name": "SharePoint",
+          "Image": "./img/logos/SharePoint.svg"
+        },
+        {
+          "name": "Power Apps",
+          "Image": "./img/logos/PowerApps.png"
+        },
+        {
+          "name": "Power Automate",
+          "Image": "./img/logos/PowerAutomate.png"
+        },
+        {
+          "name": "Power BI",
+          "Image": "./img/logos/PowerBI.webp"
+        }
+      ]
+    },
+    {
+      "Project": "Material Unloads (SharePoint 2010)",
+      "URL": "https://github.com/JordonOsborne/Eastman/tree/main/Unloads/SharePoint%202010",
+      "Link": "Unloads",
+      "Image": "https://github.com/JordonOsborne/Eastman/blob/main/Unloads/SharePoint%202010/Unloads.png?raw=true",
+      "Description": "Used HTML, CSS and JavaScript to customize default SharePoint webpage. JavaScript involved validating user inputs and correcting formatting.",
+      "Date": "2019-09-01",
+      "Technology": [
+        {
+          "name": "SharePoint",
+          "Image": "./img/logos/SharePoint.svg"
+        },
+        {
+          "name": "HTML",
+          "Image": "./img/logos/HTML.png"
+        },
+        {
+          "name": "CSS",
+          "Image": "./img/logos/CSS.png"
+        },
+        {
+          "name": "JavaScript",
+          "Image": "./img/logos/JS.png"
+        }
+      ]
+    },
+    {
+      "Project": "Material Unloads (Power App)",
+      "URL": "https://github.com/JordonOsborne/Eastman/tree/main/Unloads/Power%20App",
+      "Link": "Unloads",
+      "Image": "https://github.com/JordonOsborne/Eastman/blob/main/Unloads/Power%20App/Unloads.png?raw=true",
+      "Description": "Migrated list from SharePoint 2010 to SharePoint Online and utilized Power Apps custom form option for easier maintenance. Also enhanced the Supplier validation to use a dynamic look-up list for a dropdown.",
+      "Date": "2022-02-01",
+      "Technology": [
+        {
+          "name": "SharePoint",
+          "Image": "./img/logos/SharePoint.svg"
+        },
+        {
+          "name": "Power Apps",
+          "Image": "./img/logos/PowerApps.png"
+        },
+        {
+          "name": "Power Automate",
+          "Image": "./img/logos/PowerAutomate.png"
+        }
+      ]
+    }
+  ]
+}

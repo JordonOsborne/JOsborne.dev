@@ -1,0 +1,539 @@
+@import "config";
+@import "utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.6rem;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+// LOGO
+#logo {
+  width: 200px;
+  height: auto;
+  &-white {
+    width: 200px;
+    height: auto;
+    display: none;
+  }
+}
+
+// NAVIGATION STYLING
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  font-size: 1.25rem;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  li {
+    padding: 0.5rem 1rem;
+  }
+  a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 3px transparent solid;
+    transition: border-color 0.5s;
+    padding-bottom: 0.5rem;
+
+    &:hover {
+      border-color: $medium-color;
+    }
+    &.active {
+      border-color: $primary-color;
+    }
+  }
+}
+
+// HEADER STYLING
+#header {
+  &-home {
+    background: $bg-image no-repeat center right / cover;
+    height: 90vh;
+    color: white;
+
+    .header-content {
+      text-align: center;
+      padding: 0 2rem;
+      padding-top: 20%;
+
+      h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        margin-bottom: 1rem;
+
+        span {
+          color: $primary-color;
+        }
+      }
+      .btn-light {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &-inner {
+    background: $bg-image no-repeat center right / cover;
+    height: 5rem;
+    border-bottom: 3px solid $primary-color;
+  }
+}
+
+// HOME SECTIONS
+#Specialties {
+  .lead {
+    margin: 0 10%;
+    font-size: 1rem;
+  }
+}
+.specials {
+  margin-top: 2rem;
+  .fas,
+  img {
+    color: $primary-color;
+    padding-bottom: 1rem;
+  }
+  p {
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+  }
+}
+
+#Stats {
+  gap: 0;
+  .block:nth-child(even) {
+    background: $medium-color;
+  }
+  .block:nth-child(odd) {
+    background: $light-color;
+  }
+  i {
+    padding-bottom: 1rem;
+  }
+  h3 {
+    padding-bottom: 0.5rem;
+  }
+}
+#Design {
+  .process {
+    padding: 0 1.5rem;
+    gap: 1.25rem;
+
+    &-icon {
+      position: relative;
+      padding: 1rem;
+      cursor: pointer;
+      &:hover {
+        i {
+          background-color: $primary-color;
+          height: 4.25rem;
+          width: 4.25rem;
+          line-height: 4.4rem;
+        }
+        .number {
+          background-color: $dark-color;
+        }
+      }
+      i {
+        transition: all 0.7s;
+        cursor: pointer;
+        color: set-color($dark-color);
+        background-color: $dark-color;
+      }
+      .number {
+        color: set-color($primary-color);
+        background-color: $primary-color;
+        position: absolute;
+        top: 10%;
+        right: 30%;
+      }
+    }
+    p {
+      padding: 0.5rem;
+    }
+  }
+  .lead {
+    margin: 0 10%;
+    font-size: 1rem;
+  }
+  p {
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+  }
+}
+
+// ABOUT SECTIONS
+#About {
+  .section-title {
+    margin-top: 2rem;
+  }
+  #info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin: 2rem 10%;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-left: 10px solid $primary-color;
+      background-color: $light-color;
+      color: set-color($light-color);
+      p {
+        padding: 1rem 1.5rem;
+      }
+    }
+  }
+}
+#Awards {
+  margin: 0 15%;
+  gap: 2rem;
+  i {
+    margin: 2rem;
+  }
+  p {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+}
+#Technology {
+  .section-title {
+    margin-top: 2rem;
+  }
+  #Tools {
+    margin: 2rem 5%;
+    h3 {
+      padding: 1rem;
+    }
+  }
+}
+
+// MY WORK
+#myWork {
+  min-height: calc(100vh - 5rem);
+  .section-title {
+    margin-top: 2rem;
+  }
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+
+    #Searchbar {
+      margin-bottom: 0.5rem;
+      #Search {
+        position: relative;
+        padding: 0.5rem 2rem;
+        padding-left: 2.5rem;
+        font-size: 1.25rem;
+        border-radius: 1.25rem;
+        width: 300px;
+        &:focus-visible {
+          outline-color: inherit;
+        }
+      }
+      i {
+        position: relative;
+        left: 2.5rem;
+        top: 0;
+        z-index: 2;
+      }
+    }
+
+    &-btns,
+    &-groups,
+    &-applications {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-left: 0.5rem;
+
+      #Applications {
+        display: flex;
+
+        .filter-btn {
+          display: flex;
+          padding: 0.5rem;
+          opacity: 1;
+          &.hide {
+            display: none;
+            opacity: 0;
+            padding: 0;
+          }
+        }
+      }
+
+      .filter-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        color: $dark-color;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        transition: border-color 0.5s;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px transparent solid;
+        cursor: pointer;
+
+        img {
+          padding: 0 0.25rem;
+        }
+
+        &.active {
+          border-color: $secondary-color;
+        }
+        &:hover {
+          border-color: $primary-color;
+        }
+        &.hide {
+          display: none;
+          width: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+  #NoProjects {
+    margin: 2rem 5%;
+    text-align: center;
+    color: $primary-color;
+    font-style: italic;
+    font-size: 1.5rem;
+  }
+
+  #Gallery {
+    margin: 0 5%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    .project {
+      overflow: hidden;
+      display: grid;
+      margin-bottom: 1rem;
+      grid-template-areas:
+        "PImage Name Name"
+        "PImage Description Description"
+        "PImage Description Description"
+        "Link Technology Technology";
+      &-img {
+        grid-area: PImage;
+        height: 150px;
+        width: 200px;
+      }
+    }
+    a {
+      transition: slideDown 2s;
+      grid-area: Link;
+      font-size: 1rem;
+      padding: 0.25rem 0.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      background-color: $dark-color;
+      color: set-color($dark-color);
+      font-size: 0.8rem;
+      font-weight: bold;
+      text-align: center;
+
+      i {
+        padding-right: 0.5rem;
+      }
+    }
+    h4 {
+      animation: slideLeft 2s;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 1.5rem;
+      grid-area: Name;
+      padding: 0 1rem;
+    }
+    p {
+      animation: slideLeft 2s;
+      grid-area: Description;
+      padding: 0 1rem;
+      font-size: 0.8rem;
+      height: calc(150px - 1.5rem);
+      overflow: hidden;
+    }
+    .technology {
+      animation: slideLeft 2s;
+      grid-area: Technology;
+      display: flex;
+      padding-left: 1rem;
+
+      img {
+        margin: 0;
+        padding: 0.25rem;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+}
+
+// CONTACT
+#Contact {
+  padding-bottom: 0;
+  form {
+    background-color: $light-color;
+    padding: 2rem 5%;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 1rem auto;
+      font-size: 1.25rem;
+      max-width: $website-width;
+
+      label {
+        text-align: right;
+        min-width: 10%;
+      }
+      input {
+        width: 20%;
+        padding: 0.5rem;
+        font-size: inherit;
+        &:focus-visible {
+          outline: none;
+        }
+      }
+      label[for="Subject"] {
+        width: 40%;
+      }
+      #Subject {
+        width: 40%;
+        padding: 0.5rem;
+        font-size: 1.25rem;
+        &:focus-visible {
+          outline: none;
+        }
+      }
+    }
+    textarea {
+      max-width: $website-width;
+      width: 100%;
+      height: 8rem;
+      padding: 1rem;
+      font-size: 1rem;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+    button[type="Submit"] {
+      font-size: 1.5rem;
+      margin: 1rem auto;
+      margin-bottom: 0;
+      padding: 1rem;
+      text-align: center;
+      width: 40%;
+
+      &:hover {
+        background: $secondary-color;
+      }
+    }
+  }
+}
+#ContactInfo {
+  background-color: $primary-color;
+  color: set-color($primary-color);
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem;
+
+    h3 {
+      font-size: 1.25rem;
+      padding: 0.5rem;
+    }
+  }
+}
+
+// FOOTER
+#main-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $dark-color;
+  color: set-color($dark-color);
+  padding: 0.5rem 10%;
+  p {
+    font-size: 0.75rem;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    &[href^="tel:"] {
+      display: none;
+    }
+    i {
+      text-align: center;
+      cursor: pointer;
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+// IMPORT MOBILE SCSS FILE
+@import "mobile";

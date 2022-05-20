@@ -1,0 +1,171 @@
+// CONTAINERS
+.container {
+  margin: auto;
+  max-width: $website-width;
+  padding: 0 1.5rem;
+}
+%grid-shared {
+  display: grid;
+  gap: 1rem;
+}
+.grid {
+  &-2 {
+    @extend %grid-shared;
+    grid-template-columns: 1fr 1fr;
+  }
+  &-3 {
+    @extend %grid-shared;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &-4 {
+    @extend %grid-shared;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &-5 {
+    @extend %grid-shared;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+.bubble-small {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.bubble-medium {
+  font-size: 0.9rem;
+  line-height: 2rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+.bubble-large {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+// BUTTONS
+%btn-shared {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn {
+  &-light {
+    @extend %btn-shared;
+    background: $light-color;
+    color: $primary-color;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &-dark {
+    @extend %btn-shared;
+    background: $primary-color;
+    color: set-color($primary-color);
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover {
+  background: $primary-color;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin: 0 20%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+// MISCELLANEOUS
+.divider {
+  border-bottom: 3px solid $primary-color;
+  margin: 1rem 30%;
+}
+
+// TEXT
+.text-center {
+  text-align: center;
+}
+mark {
+  background-color: inherit;
+  color: $primary-color;
+}
+
+// IMAGES - ICONS - LOGOS
+%img-shared {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.img {
+  &-icon {
+    @extend %img-shared;
+    width: 1rem;
+    height: 1rem;
+  }
+  &-small {
+    @extend %img-shared;
+    width: 50px;
+    height: 50px;
+  }
+  &-medium {
+    @extend %img-shared;
+    width: 100px;
+    height: 100px;
+  }
+  &-large {
+    @extend %img-shared;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+// PADDING
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+// MARGIN
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
