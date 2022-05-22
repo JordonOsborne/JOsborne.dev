@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="language" content="ES" />
+    <meta
+      name="description"
+      content="I primarily work in Office 365 using SharePoint and Power Apps to design sites and forms. However, you can review my work and see that my knowledge expands to other development skills like HTML, CSS, and JavaScript."
+    />
+    <!-- NAME TAGS -->
+    <meta name="author" content="Jordon Osborne" />
+    <meta name="designer" content="Jordon Osborne" />
+    <meta name="reply-to" content="jordonosborne@outlook.com" />
+    <meta name="owner" content="Jordon Osborne" />
+    <meta name="url" content="https://www.JOsborne.dev" />
+    <!-- OG TAGS -->
+    <meta property="og:title" content="JOsborne.dev" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="I primarily work in Office 365 using SharePoint and Power Apps to design sites and forms. However, you can review my work and see that my knowledge expands to other development skills like HTML, CSS, and JavaScript."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/JordonOsborne/JOsborne.dev/main/dist/img/GrahpImage.png"
+    />
+    <meta name="og:street-address" content="115 Robin Hood Lane" />
+    <meta name="og:locality" content="Church Hill" />
+    <meta name="og:region" content="TN" />
+    <meta name="og:postal-code" content="37642" />
+    <meta name="og:country-name" content="USA" />
+    <!-- LOCATION TAGS -->
+    <meta name="geo.region" content="US-TN" />
+    <meta name="geo.placename" content="Church Hill" />
+    <meta name="geo.position" content="36.511938;-82.766875" />
+    <meta name="ICBM" content="36.511938, -82.766875" />
+    <title>Jordon Osborne | My Work</title>
+    <script
+      src="https://kit.fontawesome.com/4562154cc0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap");
+    </style>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header id="header-inner">
+      <div class="container">
+        <nav id="main-nav">
+          <img src="./img/logo_white.svg" alt="Logo" id="logo" width="200px" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mywork.html" class="active">My Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="myWork">
+      <h2 class="section-title text-center">View my Project History</h2>
+      <div class="divider"></div>
+      <form class="filter">
+        <div id="Searchbar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" id="Search" name="Search" placeholder="Search" />
+        </div>
+        <div class="filter-btns">
+          <div class="filter-groups">
+            <button
+              id="O365"
+              type="button"
+              class="filter-btn"
+              onclick="SearchProjects('O365')"
+              isGroup="true"
+              group="O365"
+            >
+              <img
+                src="./img/logos/Office365.png"
+                alt="Office 365"
+                class="img-icon"
+              />
+              <span>Office 365</span>
+            </button>
+            <button
+              id="WebDevelopment"
+              class="filter-btn"
+              type="button"
+              onclick="SearchProjects('WebDevelopment')"
+              isGroup="true"
+              group="WebDevelopment"
+            >
+              <img
+                src="./img/logos/WebDevelopment.png"
+                alt="Web Development"
+                class="img-icon"
+              />
+              <span>Web Development</span>
+            </button>
+            <button
+              id="CMS"
+              class="filter-btn"
+              type="button"
+              onclick="SearchProjects('CMS')"
+              isGroup="true"
+              group="CMS"
+            >
+              <img src="./img/logos/CMS.png" alt="CMS" class="img-icon" />
+              <span>Content Management Services</span>
+            </button>
+          </div>
+          <div id="Applications" class="filter-applications">
+            <button
+              id="SharePoint"
+              class="filter-btn"
+              type="button"
+              onclick="SearchProjects('SharePoint')"
+              group="O365"
+            >
+              <img
+                src="./img/logos/SharePoint.svg"
+                alt="SharePoint"
+                class="img-icon"
+              />
+              <span>SharePoint</span>
+            </button>
+            <button
+              id="PowerApps"
+              class="filter-btn"
+              type="button"
+              onclick="SearchProjects('PowerApps')"
+              group="O365"
+            >
+              <img
+                src="./img/logos/PowerApps.png"
+                alt="Power Apps"
+                class="img-icon"
+              />
+              <span>Power Apps</span>
+            </button>
+            <button
+              id="PowerAutomate"
+              class="filter-btn"
+              type="button"
+              onclick="SearchProjects('PowerAutomate')"
+              group="O365"
+            >
+              <img
+                src="./img/logos/PowerAutomate.png"
+                alt="Power Automate"
+                class="img-icon"
+              />
+              <span>Power Automate</span>
+            </button>
+            <button
+              id="PowerBI"
+              class="filter-btn"
+              type="button"
+              onclick="SearchProjects('PowerBI')"
+              group="O365"
+            >
+              <img
+                src="./img/logos/PowerBI.webp"
+                alt="Power BI"
+                class="img-icon"
+              />
+              <span>Power BI</span>
+            </button>
+            <button
+              id="WIX"
+              class="filter-btn"
+              type="button"
+              onclick="SearchProjects('WIX')"
+              group="CMS"
+            >
+              <img src="./img/logos/WIX.svg" alt="WIX" class="img-icon" />
+              <span>WIX</span>
+            </button>
+            <button
+              id="HTML"
+              class="filter-btn"
+              type="button"
+              onclick="SearchProjects('HTML')"
+              group="WebDevelopment"
+            >
+              <img src="./img/logos/HTML.png" alt="HTML" class="img-icon" />
+              <span>HTML</span>
+            </button>
+            <button
+              id="CSS"
+              class="filter-btn"
+              type="button"
+              onclick="SearchProjects('CSS')"
+              group="WebDevelopment"
+            >
+              <img src="./img/logos/CSS.png" alt="CSS" class="img-icon" />
+              <span>CSS</span>
+            </button>
+            <button
+              id="JavaScript"
+              class="filter-btn"
+              type="button"
+              onclick="SearchProjects('JavaScript')"
+              group="WebDevelopment"
+            >
+              <img src="./img/logos/JS.png" alt="JavaScript" class="img-icon" />
+              <span>JavaScript</span>
+            </button>
+          </div>
+        </div>
+      </form>
+      <div id="Gallery" class="grid-2">
+        <!-- JavaScript Code Running Here -->
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer">
+      <p>Copyright &copy 2022. All Rights Reserved.</p>
+      <div class="social">
+        <a
+          href="mailto:jordonosborne@outlook.com?Subject=JOsborne.dev Request"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa fa-envelope bubble-small"></i>
+        </a>
+        <a href="tel:+4232761041">
+          <i class="fa fa-phone bubble-small"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/Jordon-Osborne"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-linkedin bubble-small"></i>
+        </a>
+        <a
+          href="https://github.com/JordonOsborne"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github bubble-small"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/projects.js"></script>
+</html>
