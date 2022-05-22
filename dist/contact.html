@@ -52,7 +52,7 @@
     <header id="header-inner">
       <div class="container">
         <nav id="main-nav">
-          <img src="./img/logo_white.svg" alt="Logo" id="logo" />
+          <img src="./img/logo_white.svg" alt="Logo" id="logo" width="200px" />
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -71,19 +71,23 @@
       </p>
       <section id="ContactInfo" class="grid-3">
         <div>
-          <i class="fa fa-envelope fa-2x"></i>
-          <h3>JordonOsborne@outlook.com</h3>
+          <a href="mailto:jordonosborne@outlook.com">
+            <i class="fa fa-envelope fa-2x"></i>
+            <h3>JordonOsborne@outlook.com</h3>
+          </a>
         </div>
         <div>
-          <i class="fa fa-phone fa-2x"></i>
-          <h3>(423) 276-1041</h3>
+          <a href="tel:+4232761041">
+            <i class="fa fa-phone fa-2x"></i>
+            <h3>(423) 276-1041</h3>
+          </a>
         </div>
         <div>
           <i class="fa fa-address-card fa-2x"></i>
           <h3>115 Robin Hood Lane<br />Church Hill TN, 37642</h3>
         </div>
       </section>
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="Contact" method="POST" data-netlify="true">
         <div id="Name">
           <label for="FirstName">First Name</label>
           <input type="text" id="FirstName" />
