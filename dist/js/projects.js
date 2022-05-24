@@ -251,7 +251,8 @@ function InsertProjects(projects) {
 function AddActiveClass(button) {
   const buttons = Array.from(document.getElementsByClassName("active"));
   buttons.forEach((btn) => {
-    if (!btn.getAttribute("isgroup")) {
+    if (!btn.getAttribute("isgroup") && btn.innerText != "MY WORK") {
+      console.log("Inner Text: ", btn.innerText);
       btn.classList.remove("active");
     }
   });
