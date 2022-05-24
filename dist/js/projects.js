@@ -220,6 +220,8 @@ function InsertProjects(projects) {
           application.Image +
           "' alt='" +
           application.name +
+          "' title= '" +
+          application.name +
           "'></img>";
         return technology;
       });
