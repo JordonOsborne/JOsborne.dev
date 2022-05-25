@@ -1,23 +1,32 @@
 .container {
   margin: auto;
   max-width: 1280px;
-  padding: 0 1.5rem; }
+  padding: 0 1.5rem;
+}
 
-.grid-2, .grid-3, .grid-4, .grid-5 {
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5 {
   display: grid;
-  gap: 1rem; }
+  gap: 1rem;
+}
 
 .grid-2 {
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+}
 
 .grid-3 {
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .grid-4 {
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(4, 1fr);
+}
 
 .grid-5 {
-  grid-template-columns: repeat(5, 1fr); }
+  grid-template-columns: repeat(5, 1fr);
+}
 
 .bubble-small {
   font-size: 1.25rem;
@@ -25,7 +34,8 @@
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+}
 
 .bubble-medium {
   font-size: 0.9rem;
@@ -33,7 +43,8 @@
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  padding: 0.25rem; }
+  padding: 0.25rem;
+}
 
 .bubble-large {
   font-size: 3.5rem;
@@ -41,464 +52,603 @@
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
-  padding: 2rem; }
+  padding: 2rem;
+}
 
-.btn-light, .btn-dark {
+.btn-light,
+.btn-dark {
   display: inline-block;
   padding: 0.75rem 2rem;
   transition: all 0.5s;
   border: none;
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .btn-light {
   background: #f4f4f4;
-  color: #288dbe; }
-  .btn-light:hover {
-    text-decoration: none; }
+  color: #288dbe;
+}
+.btn-light:hover {
+  text-decoration: none;
+}
 
 .btn-dark {
   background: #288dbe;
-  color: #fff; }
-  .btn-dark:hover {
-    text-decoration: none; }
+  color: #fff;
+}
+.btn-dark:hover {
+  text-decoration: none;
+}
 
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover {
-  background: #288dbe; }
+  background: #288dbe;
+}
 
 .lead {
   font-size: 1.3rem;
   margin: 0 20%;
   margin-bottom: 2rem;
-  text-align: center; }
+  text-align: center;
+}
 
 .divider {
   border-bottom: 3px solid #288dbe;
-  margin: 1rem 30%; }
+  margin: 1rem 30%;
+}
 
 .text-center {
-  text-align: center; }
+  text-align: center;
+}
 
 mark {
   background-color: inherit;
-  color: #288dbe; }
+  color: #288dbe;
+}
 
-.img-icon, .img-small, .img-medium, .img-large {
+.img-icon,
+.img-small,
+.img-medium,
+.img-large {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%; }
+  width: 50%;
+}
 
 .img-icon {
   width: 1rem;
-  height: 1rem; }
+  height: 1rem;
+}
 
 .img-small {
   width: 50px;
-  height: 50px; }
+  height: 50px;
+}
 
 .img-medium {
   width: 100px;
-  height: 100px; }
+  height: 100px;
+}
 
 .img-large {
   width: 150px;
-  height: 150px; }
+  height: 150px;
+}
 
 .py-1 {
-  padding: 1rem 0; }
+  padding: 1rem 0;
+}
 
 .py-2 {
-  padding: 2rem 0; }
+  padding: 2rem 0;
+}
 
 .py-3 {
-  padding: 3rem 0; }
+  padding: 3rem 0;
+}
 
 .py-4 {
-  padding: 4rem 0; }
+  padding: 4rem 0;
+}
 
 .my-1 {
-  margin: 1rem 0; }
+  margin: 1rem 0;
+}
 
 .my-2 {
-  margin: 2rem 0; }
+  margin: 2rem 0;
+}
 
 .my-3 {
-  margin: 3rem 0; }
+  margin: 3rem 0;
+}
 
 .my-4 {
-  margin: 4rem 0; }
+  margin: 4rem 0;
+}
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
   font-family: "Roboto Mono", "Seguoe UI", monospace;
   line-height: 1.6rem;
-  background: #fff; }
+  background: #fff;
+}
 
 a {
   text-decoration: none;
-  color: #288dbe; }
+  color: #288dbe;
+}
 
 a:hover {
   text-decoration: underline;
-  color: inherit; }
+  color: inherit;
+}
 
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 h2,
 h3,
 h4 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 img {
-  width: 100%; }
+  width: 100%;
+}
 
 #logo {
   width: 200px;
-  height: auto; }
-  #logo-white {
-    width: 200px;
-    height: auto;
-    display: none; }
+  height: auto;
+}
+#logo-white {
+  width: 200px;
+  height: auto;
+  display: none;
+}
 
 #main-nav {
   display: flex;
   justify-content: space-between;
   padding-top: 1.5rem;
   font-size: 1.25rem;
-  flex-wrap: wrap; }
-  #main-nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-  #main-nav li {
-    padding: 0.5rem 1rem; }
-  #main-nav a {
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-bottom: 3px transparent solid;
-    transition: border-color 0.5s;
-    padding-bottom: 0.5rem; }
-    #main-nav a:hover {
-      border-color: #ccc; }
-    #main-nav a.active {
-      border-color: #288dbe; }
+  flex-wrap: wrap;
+}
+#main-nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#main-nav li {
+  padding: 0.5rem 1rem;
+}
+#main-nav a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 3px transparent solid;
+  transition: border-color 0.5s;
+  padding-bottom: 0.5rem;
+}
+#main-nav a:hover {
+  border-color: #ccc;
+}
+#main-nav a.active {
+  border-color: #288dbe;
+}
 
 #header-home {
   background: url("../img/showcase.webp") no-repeat center right/cover #333;
   height: 90vh;
-  color: white; }
-  #header-home .header-content {
-    text-align: center;
-    padding: 0 2rem;
-    padding-top: 20%; }
-    #header-home .header-content h1 {
-      font-size: 3rem;
-      line-height: 3.5rem;
-      margin-bottom: 1rem; }
-      #header-home .header-content h1 span {
-        color: #288dbe; }
-    #header-home .header-content .btn-light {
-      font-size: 1.2rem; }
+  color: white;
+}
+#header-home .header-content {
+  text-align: center;
+  padding: 0 2rem;
+  padding-top: 20%;
+}
+#header-home .header-content h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+}
+#header-home .header-content h1 span {
+  color: #288dbe;
+}
+#header-home .header-content .btn-light {
+  font-size: 1.2rem;
+}
 
 #header-inner {
   background: url("../img/showcase.webp") no-repeat center right/cover;
   height: 5rem;
-  border-bottom: 3px solid #288dbe; }
+  border-bottom: 3px solid #288dbe;
+}
 
 #Specialties .lead {
   margin: 0 10%;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 .specials {
-  margin-top: 2rem; }
-  .specials .fas,
-  .specials img {
-    color: #288dbe;
-    padding-bottom: 1rem; }
-  .specials p {
-    margin-top: 0.25rem;
-    font-size: 0.85rem;
-    line-height: 1.4rem; }
+  margin-top: 2rem;
+}
+.specials .fas,
+.specials img {
+  color: #288dbe;
+  padding-bottom: 1rem;
+}
+.specials p {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+}
 
 #Stats {
-  gap: 0; }
-  #Stats .block:nth-child(even) {
-    background: #ccc; }
-  #Stats .block:nth-child(odd) {
-    background: #f4f4f4; }
-  #Stats i {
-    padding-bottom: 1rem; }
-  #Stats h3 {
-    padding-bottom: 0.5rem; }
+  gap: 0;
+}
+#Stats .block:nth-child(even) {
+  background: #ccc;
+}
+#Stats .block:nth-child(odd) {
+  background: #f4f4f4;
+}
+#Stats i {
+  padding-bottom: 1rem;
+}
+#Stats h3 {
+  padding-bottom: 0.5rem;
+}
 
 #Design .process {
   padding: 0 1.5rem;
-  gap: 1.25rem; }
-  #Design .process-icon {
-    position: relative;
-    padding: 1rem;
-    cursor: pointer; }
-    #Design .process-icon:hover i {
-      background-color: #288dbe;
-      height: 4.25rem;
-      width: 4.25rem;
-      line-height: 4.4rem; }
-    #Design .process-icon:hover .number {
-      background-color: #333; }
-    #Design .process-icon i {
-      transition: all 0.7s;
-      cursor: pointer;
-      color: #fff;
-      background-color: #333; }
-    #Design .process-icon .number {
-      color: #fff;
-      background-color: #288dbe;
-      position: absolute;
-      top: 10%;
-      right: 30%; }
-  #Design .process p {
-    padding: 0.5rem; }
+  gap: 1.25rem;
+}
+#Design .process-icon {
+  position: relative;
+  padding: 1rem;
+  cursor: pointer;
+}
+#Design .process-icon:hover i {
+  background-color: #288dbe;
+  height: 4.25rem;
+  width: 4.25rem;
+  line-height: 4.4rem;
+}
+#Design .process-icon:hover .number {
+  background-color: #333;
+}
+#Design .process-icon i {
+  transition: all 0.7s;
+  cursor: pointer;
+  color: #fff;
+  background-color: #333;
+}
+#Design .process-icon .number {
+  color: #fff;
+  background-color: #288dbe;
+  position: absolute;
+  top: 10%;
+  right: 30%;
+}
+#Design .process p {
+  padding: 0.5rem;
+}
 
 #Design .lead {
   margin: 0 10%;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 #Design p {
   margin-top: 0.25rem;
   font-size: 0.85rem;
-  line-height: 1.4rem; }
+  line-height: 1.4rem;
+}
 
 #About .section-title {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
 #About #info {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
-  margin: 2rem 10%; }
-  #About #info div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-left: 10px solid #288dbe;
-    background-color: #f4f4f4;
-    color: #000; }
-    #About #info div p {
-      padding: 1rem 1.5rem; }
+  margin: 2rem 10%;
+}
+#About #info div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 10px solid #288dbe;
+  background-color: #f4f4f4;
+  color: #000;
+}
+#About #info div p {
+  padding: 1rem 1.5rem;
+}
 
 #Awards {
   margin: 0 15%;
-  gap: 2rem; }
-  #Awards i {
-    margin: 2rem; }
-  #Awards p {
-    padding: 1rem;
-    font-size: 0.8rem; }
+  gap: 2rem;
+}
+#Awards i {
+  margin: 2rem;
+}
+#Awards p {
+  padding: 1rem;
+  font-size: 0.8rem;
+}
 
 #Technology .section-title {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
 #Technology #Tools {
-  margin: 2rem 5%; }
-  #Technology #Tools h3 {
-    padding: 1rem; }
+  margin: 2rem 5%;
+}
+#Technology #Tools h3 {
+  padding: 1rem;
+}
 
 #myWork {
-  min-height: calc(100vh - 5rem); }
-  #myWork .section-title {
-    margin-top: 2rem; }
-  #myWork .filter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 5%; }
-    #myWork .filter #Searchbar {
-      margin-bottom: 0.5rem; }
-      #myWork .filter #Searchbar #Search {
-        position: relative;
-        padding: 0.5rem 2rem;
-        padding-left: 2.5rem;
-        font-size: 1.25rem;
-        border-radius: 1.25rem;
-        width: 300px; }
-        #myWork .filter #Searchbar #Search:focus-visible {
-          outline-color: inherit; }
-      #myWork .filter #Searchbar i {
-        position: relative;
-        left: 2.5rem;
-        top: 0;
-        z-index: 2; }
-    #myWork .filter-btns, #myWork .filter-groups, #myWork .filter-applications {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap; }
-      #myWork .filter-btns #Applications, #myWork .filter-groups #Applications, #myWork .filter-applications #Applications {
-        display: flex; }
-        #myWork .filter-btns #Applications .filter-btn, #myWork .filter-groups #Applications .filter-btn, #myWork .filter-applications #Applications .filter-btn {
-          display: flex;
-          padding: 0.5rem;
-          opacity: 1; }
-          #myWork .filter-btns #Applications .filter-btn.hide, #myWork .filter-groups #Applications .filter-btn.hide, #myWork .filter-applications #Applications .filter-btn.hide {
-            display: none;
-            opacity: 0;
-            padding: 0; }
-      #myWork .filter-btns .filter-btn, #myWork .filter-groups .filter-btn, #myWork .filter-applications .filter-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0.5rem;
-        color: #333;
-        font-size: 0.85rem;
-        text-transform: uppercase;
-        transition: border-color 0.5s;
-        background-color: transparent;
-        border: none;
-        border-bottom: 3px transparent solid;
-        cursor: pointer; }
-        #myWork .filter-btns .filter-btn img, #myWork .filter-groups .filter-btn img, #myWork .filter-applications .filter-btn img {
-          padding: 0 0.25rem; }
-        #myWork .filter-btns .filter-btn.active, #myWork .filter-groups .filter-btn.active, #myWork .filter-applications .filter-btn.active {
-          border-color: #be288d; }
-        #myWork .filter-btns .filter-btn:hover, #myWork .filter-groups .filter-btn:hover, #myWork .filter-applications .filter-btn:hover {
-          border-color: #288dbe; }
-        #myWork .filter-btns .filter-btn.hide, #myWork .filter-groups .filter-btn.hide, #myWork .filter-applications .filter-btn.hide {
-          display: none;
-          width: 0;
-          padding: 0; }
-  #myWork #NoProjects {
-    margin: 2rem 5%;
-    text-align: center;
-    color: #288dbe;
-    font-style: italic;
-    font-size: 1.5rem; }
-  #myWork #Gallery {
-    margin: 0 5%;
-    margin-top: 1rem;
-    margin-bottom: 2rem; }
-    #myWork #Gallery .project {
-      overflow: hidden;
-      display: grid;
-      margin-bottom: 1rem;
-      grid-template-areas: "PImage Name Name" "PImage Description Description" "PImage Description Description" "Link Technology Technology"; }
-      #myWork #Gallery .project-img {
-        grid-area: PImage;
-        height: 150px;
-        width: 200px; }
-    #myWork #Gallery a {
-      transition: slideDown 2s;
-      grid-area: Link;
-      font-size: 1rem;
-      padding: 0.25rem 0.5rem;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      background-color: #333;
-      color: #fff;
-      font-size: 0.8rem;
-      font-weight: bold;
-      text-align: center; }
-      #myWork #Gallery a i {
-        padding-right: 0.5rem; }
-    #myWork #Gallery h4 {
-      animation: slideLeft 2s;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      height: 1.5rem;
-      grid-area: Name;
-      padding: 0 1rem; }
-    #myWork #Gallery p {
-      animation: slideLeft 2s;
-      grid-area: Description;
-      padding: 0 1rem;
-      font-size: 0.8rem;
-      height: calc(150px - 1.5rem);
-      overflow: hidden; }
-    #myWork #Gallery .technology {
-      animation: slideLeft 2s;
-      grid-area: Technology;
-      display: flex;
-      padding-left: 1rem; }
-      #myWork #Gallery .technology img {
-        margin: 0;
-        padding: 0.25rem;
-        width: 1.5rem;
-        height: 1.5rem; }
+  min-height: calc(100vh - 5rem);
+}
+#myWork .section-title {
+  margin-top: 2rem;
+}
+#myWork .filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+}
+#myWork .filter #Searchbar {
+  margin-bottom: 0.5rem;
+}
+#myWork .filter #Searchbar #Search {
+  position: relative;
+  padding: 0.5rem 2rem;
+  padding-left: 2.5rem;
+  font-size: 1.25rem;
+  border-radius: 1.25rem;
+  width: 300px;
+}
+#myWork .filter #Searchbar #Search:focus-visible {
+  outline-color: inherit;
+}
+#myWork .filter #Searchbar i {
+  position: relative;
+  left: 2.5rem;
+  top: 0;
+  z-index: 2;
+}
+#myWork .filter-btns,
+#myWork .filter-groups,
+#myWork .filter-applications {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#myWork .filter-btns #Applications,
+#myWork .filter-groups #Applications,
+#myWork .filter-applications #Applications {
+  display: flex;
+}
+#myWork .filter-btns #Applications .filter-btn,
+#myWork .filter-groups #Applications .filter-btn,
+#myWork .filter-applications #Applications .filter-btn {
+  display: flex;
+  padding: 0.5rem;
+  opacity: 1;
+}
+#myWork .filter-btns #Applications .filter-btn.hide,
+#myWork .filter-groups #Applications .filter-btn.hide,
+#myWork .filter-applications #Applications .filter-btn.hide {
+  display: none;
+  opacity: 0;
+  padding: 0;
+}
+#myWork .filter-btns .filter-btn,
+#myWork .filter-groups .filter-btn,
+#myWork .filter-applications .filter-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  color: #333;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  transition: border-color 0.5s;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px transparent solid;
+  cursor: pointer;
+}
+#myWork .filter-btns .filter-btn img,
+#myWork .filter-groups .filter-btn img,
+#myWork .filter-applications .filter-btn img {
+  padding: 0 0.25rem;
+}
+#myWork .filter-btns .filter-btn.active,
+#myWork .filter-groups .filter-btn.active,
+#myWork .filter-applications .filter-btn.active {
+  border-color: #be288d;
+}
+#myWork .filter-btns .filter-btn:hover,
+#myWork .filter-groups .filter-btn:hover,
+#myWork .filter-applications .filter-btn:hover {
+  border-color: #288dbe;
+}
+#myWork .filter-btns .filter-btn.hide,
+#myWork .filter-groups .filter-btn.hide,
+#myWork .filter-applications .filter-btn.hide {
+  display: none;
+  width: 0;
+  padding: 0;
+}
+#myWork #NoProjects {
+  margin: 2rem 5%;
+  text-align: center;
+  color: #288dbe;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+#myWork #Gallery {
+  margin: 0 5%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+#myWork #Gallery .project {
+  overflow: hidden;
+  display: grid;
+  margin-bottom: 1rem;
+  grid-template-areas: "PImage Name Name" "PImage Description Description" "PImage Description Description" "Link Technology Technology";
+}
+#myWork #Gallery .project-img {
+  grid-area: PImage;
+  height: 150px;
+  width: 200px;
+}
+#myWork #Gallery a {
+  transition: slideDown 2s;
+  grid-area: Link;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #333;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+#myWork #Gallery a i {
+  padding-right: 0.5rem;
+}
+#myWork #Gallery h4 {
+  animation: slideLeft 2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 1.5rem;
+  grid-area: Name;
+  padding: 0 1rem;
+}
+#myWork #Gallery p {
+  animation: slideLeft 2s;
+  grid-area: Description;
+  padding: 0 1rem;
+  font-size: 0.8rem;
+  height: calc(150px - 1.5rem);
+  overflow: hidden;
+}
+#myWork #Gallery .technology {
+  animation: slideLeft 2s;
+  grid-area: Technology;
+  display: flex;
+  padding-left: 1rem;
+}
+#myWork #Gallery .technology img {
+  margin: 0;
+  padding: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
 
 #Contact {
   padding-bottom: 0;
-  min-height: 100vh; }
-  #Contact form {
-    background-color: #f4f4f4;
-    padding: 2rem 5%; }
-    #Contact form div {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      margin: 1rem auto;
-      font-size: 1.25rem;
-      max-width: 1280px; }
-      #Contact form div label {
-        text-align: right;
-        min-width: 10%; }
-      #Contact form div input {
-        width: 20%;
-        padding: 0.5rem;
-        font-size: inherit; }
-        #Contact form div input:focus-visible {
-          outline: none; }
-      #Contact form div label[for="Subject"] {
-        width: 40%; }
-      #Contact form div #Subject {
-        width: 40%;
-        padding: 0.5rem;
-        font-size: 1.25rem; }
-        #Contact form div #Subject:focus-visible {
-          outline: none; }
-    #Contact form textarea {
-      max-width: 1280px;
-      width: 100%;
-      height: 8rem;
-      padding: 1rem;
-      font-size: 1rem; }
-      #Contact form textarea:focus-visible {
-        outline: none; }
-    #Contact form button[type="Submit"] {
-      font-size: 1.5rem;
-      margin: 1rem auto;
-      margin-bottom: 0;
-      padding: 1rem;
-      text-align: center;
-      width: 40%; }
-      #Contact form button[type="Submit"]:hover {
-        background: #be288d; }
+  min-height: 100vh;
+}
+#Contact form {
+  background-color: #f4f4f4;
+  padding: 2rem 5%;
+}
+#Contact form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem auto;
+  font-size: 1.25rem;
+  max-width: 1280px;
+}
+#Contact form div label {
+  text-align: right;
+  min-width: 10%;
+}
+#Contact form div input {
+  width: 20%;
+  padding: 0.5rem;
+  font-size: inherit;
+}
+#Contact form div input:focus-visible {
+  outline: none;
+}
+#Contact form div label[for="Subject"] {
+  width: 40%;
+}
+#Contact form div #Subject {
+  width: 40%;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+#Contact form div #Subject:focus-visible {
+  outline: none;
+}
+#Contact form textarea {
+  max-width: 1280px;
+  width: 100%;
+  height: 8rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+#Contact form textarea:focus-visible {
+  outline: none;
+}
+#Contact form button[type="Submit"] {
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  margin-bottom: 0;
+  padding: 1rem;
+  text-align: center;
+  width: 40%;
+}
+#Contact form button[type="Submit"]:hover {
+  background: #be288d;
+}
 
 #ContactInfo {
   background-color: #288dbe;
-  color: #fff; }
-  #ContactInfo div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0.5rem; }
-    #ContactInfo div a {
-      color: inherit; }
-      #ContactInfo div a:hover {
-        text-decoration: none;
-        color: inherit; }
-    #ContactInfo div h3 {
-      font-size: 1.25rem;
-      padding: 0.5rem; }
+  color: #fff;
+}
+#ContactInfo div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.5rem;
+}
+#ContactInfo div a {
+  color: inherit;
+}
+#ContactInfo div a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+#ContactInfo div h3 {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
 
 #main-footer {
   display: flex;
@@ -506,204 +656,289 @@ img {
   align-items: center;
   background-color: #333;
   color: #fff;
-  padding: 0.5rem 10%; }
-  #main-footer p {
-    font-size: 0.75rem; }
-  #main-footer a {
-    color: inherit;
-    text-decoration: none; }
-    #main-footer a[href^="tel:"] {
-      display: none; }
-    #main-footer a i {
-      text-align: center;
-      cursor: pointer; }
-      #main-footer a i:hover {
-        background-color: #288dbe; }
+  padding: 0.5rem 10%;
+}
+#main-footer p {
+  font-size: 0.75rem;
+}
+#main-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+#main-footer a[href^="tel:"] {
+  display: none;
+}
+#main-footer a i {
+  text-align: center;
+  cursor: pointer;
+}
+#main-footer a i:hover {
+  background-color: #288dbe;
+}
 
 @keyframes slideLeft {
   from {
-    transform: translateX(100%); }
+    transform: translateX(100%);
+  }
   to {
-    transform: translateX(0); } }
+    transform: translateX(0);
+  }
+}
 
 @keyframes slideDown {
   from {
-    transform: translateY(-100%); }
+    transform: translateY(-100%);
+  }
   to {
-    transform: translateY(0); } }
+    transform: translateY(0);
+  }
+}
 
 @media (max-width: 920px) {
   .grid-4 {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+  }
   .grid-5 {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(3, 1fr);
+  }
   .img-large {
     width: 100px;
-    height: 100px; }
+    height: 100px;
+  }
   #header-inner {
-    height: 5rem; }
+    height: 5rem;
+  }
   #header-home {
-    height: 40rem; }
-    #header-home .header-content {
-      padding-top: 10%; }
-      #header-home .header-content .lead {
-        line-height: 2rem; }
+    height: 40rem;
+  }
+  #header-home .header-content {
+    padding-top: 10%;
+  }
+  #header-home .header-content .lead {
+    line-height: 2rem;
+  }
   #Stats .block:nth-child(1) {
-    background-color: #ccc; }
+    background-color: #ccc;
+  }
   #Stats .block:nth-child(2) {
-    background-color: #f4f4f4; }
+    background-color: #f4f4f4;
+  }
   #Stats .block:nth-child(4) {
-    background-color: #ccc; }
+    background-color: #ccc;
+  }
   #About #info {
     grid-template-columns: 1fr;
-    gap: 1rem; }
-    #About #info div {
-      border-top: 10px solid #288dbe;
-      border-left: none;
-      padding: 1rem 3rem; }
+    gap: 1rem;
+  }
+  #About #info div {
+    border-top: 10px solid #288dbe;
+    border-left: none;
+    padding: 1rem 3rem;
+  }
   #Tools div:last-child {
-    grid-column-end: span 3; }
+    grid-column-end: span 3;
+  }
   #myWork .filter {
-    flex-direction: column; }
-    #myWork .filter-btns {
-      align-self: start;
-      margin-left: 0; }
+    flex-direction: column;
+  }
+  #myWork .filter-btns {
+    align-self: start;
+    margin-left: 0;
+  }
   #myWork #Gallery {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+  }
   #Contact {
-    height: calc(100vh - 5rem); }
-    #Contact form div:nth-child(1), #Contact form div:nth-child(2) {
-      margin-right: 2rem; }
-    #Contact form div label {
-      margin: 0 1rem;
-      flex: 1; }
+    height: calc(100vh - 5rem);
+  }
+  #Contact form div:nth-child(1),
+  #Contact form div:nth-child(2) {
+    margin-right: 2rem;
+  }
+  #Contact form div label {
+    margin: 0 1rem;
+    flex: 1;
+  }
   #ContactInfo {
-    grid-template-columns: repeat(2, 1fr); }
-    #ContactInfo div:last-child {
-      display: none; } }
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #ContactInfo div:last-child {
+    display: none;
+  }
+}
 
 @media (max-width: 420px) {
-  .grid-2, .grid-3, .grid-4, .grid-5 {
-    grid-template-columns: 1fr; }
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-5 {
+    grid-template-columns: 1fr;
+  }
   .img-large {
     width: 75px;
-    height: 75px; }
+    height: 75px;
+  }
   #logo {
-    display: none; }
-    #logo-white {
-      display: block; }
+    display: none;
+  }
+  #logo-white {
+    display: block;
+  }
   #header-inner .container {
-    padding: 0 0.5rem; }
+    padding: 0 0.5rem;
+  }
   #main-nav {
     flex-direction: column;
     padding-top: 0.5rem;
-    justify-content: flex-start; }
-    #main-nav a {
-      font-size: 1rem; }
+    justify-content: flex-start;
+  }
+  #main-nav a {
+    font-size: 1rem;
+  }
   #header-home {
-    height: 30rem; }
-    #header-home .container {
-      padding: 0 0.5rem; }
-    #header-home .header-content h1 {
-      font-size: 2rem;
-      line-height: 2.5rem; }
-    #header-home .header-content .lead {
-      margin: 0;
-      font-size: 1rem;
-      margin-bottom: 1rem; }
+    height: 30rem;
+  }
+  #header-home .container {
+    padding: 0 0.5rem;
+  }
+  #header-home .header-content h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  #header-home .header-content .lead {
+    margin: 0;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
   #Stats .block:nth-child(odd) {
-    background-color: #ccc; }
+    background-color: #ccc;
+  }
   #Stats .block:nth-child(even) {
-    background-color: #f4f4f4; }
+    background-color: #f4f4f4;
+  }
   #About .lead {
-    margin: 0 1rem; }
+    margin: 0 1rem;
+  }
   #About #info {
     margin: 2rem 0;
-    gap: 0; }
-    #About #info div {
-      padding: 1rem; }
+    gap: 0;
+  }
+  #About #info div {
+    padding: 1rem;
+  }
   #Technology #Tools {
-    grid-template-columns: repeat(2, 1fr); }
-    #Technology #Tools div h3 {
-      font-size: 1rem;
-      padding: 1rem 0.5rem; }
-    #Technology #Tools div:last-child {
-      grid-column-end: auto; }
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #Technology #Tools div h3 {
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+  }
+  #Technology #Tools div:last-child {
+    grid-column-end: auto;
+  }
   #myWork .filter {
-    flex-direction: column; }
-    #myWork .filter #Searchbar i {
-      display: none; }
-    #myWork .filter #Searchbar #Search {
-      padding-left: 2rem; }
+    flex-direction: column;
+  }
+  #myWork .filter #Searchbar i {
+    display: none;
+  }
+  #myWork .filter #Searchbar #Search {
+    padding-left: 2rem;
+  }
   #myWork .filter-btns {
     flex-direction: column;
     justify-content: space-evenly;
-    align-self: center; }
-    #myWork .filter-btns #Applications .filter-btn {
-      padding: 0.5rem 1.5rem; }
-    #myWork .filter-btns .filter-btn {
-      flex-direction: column;
-      padding: 0.5rem 1.5rem;
-      flex: 1;
-      max-width: 150px; }
-      #myWork .filter-btns .filter-btn img {
-        height: 2rem;
-        width: 2rem; }
-      #myWork .filter-btns .filter-btn span {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: 0.7rem;
-        margin-top: 0.5rem; }
+    align-self: center;
+  }
+  #myWork .filter-btns #Applications .filter-btn {
+    padding: 0.5rem 1.5rem;
+  }
+  #myWork .filter-btns .filter-btn {
+    flex-direction: column;
+    padding: 0.5rem 1.5rem;
+    flex: 1;
+    max-width: 150px;
+  }
+  #myWork .filter-btns .filter-btn img {
+    height: 2rem;
+    width: 2rem;
+  }
+  #myWork .filter-btns .filter-btn span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+  }
   #myWork #Gallery {
-    gap: 1.5rem; }
-    #myWork #Gallery .project {
-      grid-template-areas: "PImage" "Name" "Technology" "Description" "Link"; }
-      #myWork #Gallery .project-img {
-        height: auto;
-        width: 100%; }
-      #myWork #Gallery .project h4 {
-        padding: 0.5rem 0;
-        text-align: center;
-        overflow: auto;
-        white-space: normal;
-        height: auto; }
-      #myWork #Gallery .project .technology {
-        justify-content: center; }
-      #myWork #Gallery .project p {
-        text-align: center;
-        margin-bottom: 0.5rem; }
+    gap: 1.5rem;
+  }
+  #myWork #Gallery .project {
+    grid-template-areas: "PImage" "Name" "Technology" "Description" "Link";
+  }
+  #myWork #Gallery .project-img {
+    height: auto;
+    width: 100%;
+  }
+  #myWork #Gallery .project h4 {
+    padding: 0.5rem 0;
+    text-align: center;
+    overflow: auto;
+    white-space: normal;
+    height: auto;
+  }
+  #myWork #Gallery .project .technology {
+    justify-content: center;
+  }
+  #myWork #Gallery .project p {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
   #Contact {
-    height: auto; }
-    #Contact .lead {
-      margin: 0 2rem;
-      margin-bottom: 2rem; }
-    #Contact #ContactInfo {
-      grid-template-columns: 1fr;
-      gap: 0; }
-      #Contact #ContactInfo h3 {
-        font-size: 1rem; }
-    #Contact form {
-      padding: 1rem; }
-      #Contact form div {
-        flex-direction: column;
-        margin: 0; }
-        #Contact form div:nth-child(1), #Contact form div:nth-child(2) {
-          margin-right: 0; }
-        #Contact form div label,
-        #Contact form div label[for="Subject"],
-        #Contact form div input,
-        #Contact form div #Subject,
-        #Contact form div textarea {
-          margin-top: 0.5rem;
-          width: 90%;
-          text-align: left; }
-        #Contact form div label[for="Subject"] {
-          font-size: 1rem; }
-      #Contact form button[type="Submit"] {
-        width: 90%;
-        margin: 2rem auto; }
+    height: auto;
+  }
+  #Contact .lead {
+    margin: 0 2rem;
+    margin-bottom: 2rem;
+  }
+  #Contact #ContactInfo {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  #Contact #ContactInfo h3 {
+    font-size: 1rem;
+  }
+  #Contact form {
+    padding: 1rem;
+  }
+  #Contact form div {
+    flex-direction: column;
+    margin: 0;
+  }
+  #Contact form div:nth-child(1),
+  #Contact form div:nth-child(2) {
+    margin-right: 0;
+  }
+  #Contact form div label,
+  #Contact form div label[for="Subject"],
+  #Contact form div input,
+  #Contact form div #Subject,
+  #Contact form div textarea {
+    margin-top: 0.5rem;
+    width: 90%;
+    text-align: left;
+  }
+  #Contact form div label[for="Subject"] {
+    font-size: 1rem;
+  }
+  #Contact form button[type="Submit"] {
+    width: 90%;
+    margin: 2rem auto;
+  }
   #main-footer {
-    flex-direction: column-reverse; }
-    #main-footer a[href^="tel:"] {
-      display: inline-block; } }
+    flex-direction: column-reverse;
+  }
+  #main-footer a[href^="tel:"] {
+    display: inline-block;
+  }
+}
