@@ -778,6 +778,9 @@ img {
     width: 75px;
     height: 75px;
   }
+  #header-home #logo {
+    display: none;
+  }
   #logo-white {
     display: block;
   }
