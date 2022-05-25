@@ -857,7 +857,7 @@ img {
     flex-direction: column;
     padding: 0.5rem 1.5rem;
     flex: 1;
-    max-width: 150px;
+    max-width: 125px;
   }
   #myWork .filter-btns .filter-btn img {
     height: 2rem;
